@@ -1,5 +1,5 @@
 # UE5
-Epic Games Launcher
+Epic Games Launcher/
 Capture 1
 Run the installer, Open it once to update it.
 
