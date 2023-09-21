@@ -1,16 +1,25 @@
-#loggedInUser=$(ls -l /dev/console | awk '{print$3}')
+loggedInUser=$(ls -l /dev/console | awk '{print$3}')
 
-#echo '<?xml version="1.0" encoding="UTF-8"?>
-#<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-#<plist version="1.0">
-#    <dict>
-#        <key>ModSdkAppToCheck</key>
-#        <string>EpicGamesLauncher-Mac-Shipping</string>
-#        <key>ModSdkCommand</key>
-#        <string>/Applications/Epic Games Launcher.app/Contents/MacOS/EpicGamesLauncher-Mac-Shipping</string>
-#        <key>ModSdkArguments</key>
-#        <string>--args -ApplicationMode=ModSdk</string>
-#        <key>ModSdkMetadataDir</key>
-#        <string>/Users/$loggedInUser/Library/Application Support/Epic/EpicGamesLauncher/Data/Manifests</string>
-#    </dict>
-#</plist>' > /Users/$loggedInUser/Library/Preferences/com.epicgames.EpicGamesModSdk.plist
+#This will create the preferences files in the logged in users Library
+#Not sure about the variable in line 17
+
+echo '<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>ModSdkAppToCheck</key>
+        <string>EpicGamesLauncher-Mac-Shipping</string>
+        <key>ModSdkCommand</key>
+        <string>/Applications/Epic Games Launcher.app/Contents/MacOS/EpicGamesLauncher-Mac-Shipping</string>
+        <key>ModSdkArguments</key>
+        <string>--args -ApplicationMode=ModSdk</string>
+        <key>ModSdkMetadataDir</key>
+        <string>/Users/$loggedInUser/Library/Application Support/Epic/EpicGamesLauncher/Data/Manifests</string>
+    </dict>
+</plist>' > /Users/$loggedInUser/Library/Preferences/com.epicgames.EpicGamesModSdk.plist
+
+echo '<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict/>
+</plist>' > /Users/$loggedInUser/Library/Preferences/com.epicgames.EpicWebHelper.plist
