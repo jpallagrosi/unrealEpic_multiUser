@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.epic.manifestscp</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>sh</string>
+		<string>-c</string>
+		<string>/usr/local/Epic_Manifest_cp.sh</string>
+	</array>
+	<key>StandardErrorPath</key>
+	<string>/var/log/cpmanifests_err.log</string>
+	<key>StandardOutPath</key>
+	<string>/var/log/cpmanifests.log</string>
+</dict>
+</plist>
