@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-set -x
+#set -x
 
 loggedInUser=$(ls -l /dev/console | awk '{print$3}')
 
