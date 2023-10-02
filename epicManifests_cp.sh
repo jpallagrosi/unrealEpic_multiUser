@@ -1,5 +1,6 @@
 #!/bin/zsh
 
+#It will wait until the logged in user opens Epic to move the manifests files
 loggedInUser=$(ls -l /dev/console | awk '\''{print$3}'\'')
 localAdmin=
 
