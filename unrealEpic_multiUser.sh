@@ -2,6 +2,7 @@
 
 #set -x
 
+#Create the script to copy the manifests files into the logged in user's library
 cd /usr/local/
 
 echo '#!/bin/zsh
@@ -24,6 +25,7 @@ exit 0' > epicManifests_cp.sh
 chmod +x /usr/local/epicManifests_cp.sh
 chown root:wheel /usr/local/epicManifests_cp.sh
 
+#Creates the LaunchAgent to trigger the script
 cd /Library/LaunchAgents/
 
 echo '<?xml version="1.0" encoding="UTF-8"?>
