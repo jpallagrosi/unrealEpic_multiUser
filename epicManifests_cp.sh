@@ -1,8 +1,7 @@
 #!/bin/zsh
 
-#set -x
-
-loggedInUser=$(ls -l /dev/console | awk '{print$3}')
+loggedInUser=$(ls -l /dev/console | awk '\''{print$3}'\'')
+localAdmin=
 
 until [ -d /Users/$loggedInUser/Library/Application\ Support/Epic/ ]
     do
@@ -12,6 +11,6 @@ until [ -d /Users/$loggedInUser/Library/Application\ Support/Epic/ ]
 sleep 3
 
 mkdir -p "/Users/$loggedInUser/Library/Application Support/Epic/EpicGamesLauncher/Data"
-cp -R "/Users/its/Library/Application Support/Epic/EpicGamesLauncher/Data/Manifests" "/Users/$loggedInUser/Library/Application Support/Epic/EpicGamesLauncher/Data/"
+cp -R "/Users/$localAdmin/Library/Application Support/Epic/EpicGamesLauncher/Data/Manifests" "/Users/$loggedInUser/Library/Application Support/Epic/EpicGamesLauncher/Data/"
 
-exit
+exit 0
