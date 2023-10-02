@@ -12,7 +12,7 @@ XCode
 Scope in the app store via a static group
 
 Hide the app:
-Files and Processes
+Files and Processes \
 chflags hidden /Applications/Xcode.app
 
-Script to bypass the agreements with admin right in Code
+Script to bypass the agreements with admin right available to download in Code
