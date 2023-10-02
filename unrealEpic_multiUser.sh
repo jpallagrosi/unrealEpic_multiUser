@@ -3,7 +3,8 @@
 #set -x
 
 #Creates the script to copy the manifests files into the logged in user's library
-#It will wait until the logged in user opens Epic to move the manifests files
+
+#The script will wait until the logged in user opens Epic to move the manifests files
 cd /usr/local/
 
 echo '#!/bin/zsh
