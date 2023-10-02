@@ -6,7 +6,7 @@ Drop the app in composer
 Unreal Engine 5
 
 Snapshot the install Unreal Engine 5 via the Epic Games Laucnher.
-'\(Drag and drop didn't work.)'\
+\(Drag and drop didn't work.)\
 
 XCode
 Scope in the app store via a static group
