@@ -5,22 +5,37 @@
 #Creates the script to copy the manifests files into the logged in user's library
 
 #The script will wait until the logged in user opens Epic to move the manifests files
+#User will be prompt to relaunch the app
 cd /usr/local/
 
 echo '#!/bin/zsh
-
 loggedInUser=$(ls -l /dev/console | awk '\''{print$3}'\'')
 localAdmin=
+#epicLibrary="/Users/$loggedInUser/Library/Application\ Support/Epic/"
 
-until [ -d /Users/$loggedInUser/Library/Application\ Support/Epic/ ]
-    do
+if [ -d /Users/$loggedInUser/Library/Application\ Support/Epic/ ]
+	then 
+		echo "Epic directory already exists."
+	else
+		until [ -d /Users/$loggedInUser/Library/Application\ Support/Epic/ ]
+    		do
+           		echo "Epic directory not found. Waiting..."
+        		sleep 3
+    		done
+
+        echo "Epic directory found. Proceeding..."
         sleep 3
-    done
 
-sleep 3
+        mkdir -p "/Users/$loggedInUser/Library/Application Support/Epic/EpicGamesLauncher/Data"
+        cp -R "/Users/$localAdmin/Library/Application Support/Epic/EpicGamesLauncher/Data/Manifests" "/Users/$loggedInUser/Library/Application Support/Epic/EpicGamesLauncher/Data/"
 
-mkdir -p "/Users/$loggedInUser/Library/Application Support/Epic/EpicGamesLauncher/Data"
-cp -R "/Users/$localAdmin/Library/Application Support/Epic/EpicGamesLauncher/Data/Manifests" "/Users/$loggedInUser/Library/Application Support/Epic/EpicGamesLauncher/Data/"
+		sleep 7
+		osascript  -e 'display dialog "Please restart the Epic Games Launcher to enable full functionality." buttons {"Restart EPIC"} default button 1'
+		pkill Epic Games Launcher
+		sleep 3
+		Open /Applications/Epic\ Games\ Launcher.app
+
+fi
 
 exit 0' > epicManifests_cp.sh
 
