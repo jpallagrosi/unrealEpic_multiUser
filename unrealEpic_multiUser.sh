@@ -22,8 +22,6 @@ sleep 3
 mkdir -p "/Users/$loggedInUser/Library/Application Support/Epic/EpicGamesLauncher/Data"
 cp -R "/Users/$localAdmin/Library/Application Support/Epic/EpicGamesLauncher/Data/Manifests" "/Users/$loggedInUser/Library/Application Support/Epic/EpicGamesLauncher/Data/"
 
-rm /Library/LaunchAgents/com.epic.manifests.plist
-
 exit 0' > epicManifests_cp.sh
 
 chmod +x /usr/local/epicManifests_cp.sh
