@@ -9,10 +9,7 @@ Snapshot the install Unreal Engine 5 via the Epic Games Laucnher. \
 \(Drag and drop didn't work)
 
 XCode
-Scope in the app store via a static group
-
-Hide the app:
-Files and Processes \
-chflags hidden /Applications/Xcode.app
+Scope in the app store via a static group. \
+Agrements an hide the app in Code. Scoped "Once per user per computer"
 
 Script to bypass the agreements with admin right available to download in Code
