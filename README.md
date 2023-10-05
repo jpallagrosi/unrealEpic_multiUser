@@ -1,5 +1,5 @@
 # UE5
-Epic Games Launcher and Unreal Engine 5. \
+Epic Games Launcher and Unreal Engine 5.
 
 Snapshot the install of both Epic Games Launcher Unreal Engine 5. \
 Install Unreal Engine 5 from the Epic Games Launcher. \
