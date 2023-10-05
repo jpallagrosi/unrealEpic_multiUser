@@ -30,7 +30,7 @@ if [ -d /Users/$loggedInUser/Library/Application\ Support/Epic/ ]
         cp -R "/Users/$localAdmin/Library/Application Support/Epic/EpicGamesLauncher/Data/Manifests" "/Users/$loggedInUser/Library/Application Support/Epic/EpicGamesLauncher/Data/"
 
 		sleep 7
-		osascript  -e '\''display dialog "Please restart the Epic Games Launcher to enable full functionality." buttons {"Restart EPIC"} default button 1''\'
+		osascript  -e '\''display dialog "Please restart the Epic Games Launcher to enable full functionality." buttons {"Restart EPIC"} default button 1'\''
 		pkill Epic Games Launcher
 		sleep 3
 		Open /Applications/Epic\ Games\ Launcher.app
