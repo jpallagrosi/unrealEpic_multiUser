@@ -4,7 +4,6 @@
 
 loggedInUser=$(ls -l /dev/console | awk '{print$3}')
 localAdmin=its
-#epicLibrary="/Users/$loggedInUser/Library/Application\ Support/Epic/"
 
 if [ -d /Users/$loggedInUser/Library/Application\ Support/Epic/ ]
 	then 
