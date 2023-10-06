@@ -24,7 +24,7 @@ if [ -d /Users/$loggedInUser/Library/Application\ Support/Epic/ ]
 		sleep 7
 		osascript  -e 'display dialog "Please restart the Epic Games Launcher to enable full functionality." buttons {"Restart EPIC"} default button 1'
 		pkill Epic Games Launcher
-		sleep 3
+		sleep 5
 		Open /Applications/Epic\ Games\ Launcher.app
 
 fi
