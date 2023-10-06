@@ -15,3 +15,6 @@ If XCode is beeing used separatly to Unreal this might not work for you.
 
 Add the script unrealEpic_multiUser.sh in the same policy as the package. \
 This will install both the LaunchAgent com.epic.manifests.plist and the script epicManifests_cp.sh in the correct locations.
+
+The script unrealEpic_multiUser.sh also work if UE5 is already installed. \
+However removeUsersEpic.sh must be ran on the client machines beforehand.
