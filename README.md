@@ -13,7 +13,7 @@ Scope in the app store via a static group. \
 Agrements an hide the app script. Scoped "Once per user per computer" \
 If XCode is beeing used separatly to Unreal this might not work for you.
 
-Add the script "unrealEpic_multiUser.sh" in the same policy as the package. \
+Add the script "unrealEpic_multiUser.sh" in the same policy as the package. Set the local admin in Parameter 4\
 This will install both the LaunchAgent "com.epic.manifests.plist" and the script "epicManifests_cp.sh" in the correct locations.
 
 The script "unrealEpic_multiUser.sh" works if UE5 is already installed. \
