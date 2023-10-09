@@ -17,4 +17,5 @@ Add the script "unrealEpic_multiUser.sh" in the same policy as the package. Set 
 This will install both the LaunchAgent "com.epic.manifests.plist" and the script "epicManifests_cp.sh" in the correct locations.
 
 The script "unrealEpic_multiUser.sh" works if UE5 is already installed. \
-However "removeUsersEpic.sh" must be ran once on the client machines beforehand.
+However "removeUsersEpic.sh" must be ran once on the client machines beforehand. \
+"userEpicFolder.sh" is the extension attribute to target the right devices.
