@@ -1,7 +1,7 @@
 #!/bin/bash
 loggedInUser=$(ls -l /dev/console | awk '{print$3}')
 epicLibrary="/Users/$loggedInUser/Library/Application\ Support/Epic/"
-localAdmin=$4
+localAdmin=
 
 #if [ -d /Users/$loggedInUser/Library/Application\ Support/Epic/ ]
 if [ -d $epicLibrary ]
