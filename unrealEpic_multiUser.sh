@@ -10,7 +10,7 @@ cd /usr/local/
 
 echo '#!/bin/zsh
 loggedInUser=$(ls -l /dev/console | awk '\''{print$3}'\'')
-localAdmin=$4
+localAdmin='"$4"'
 
 if [ -d /Users/$loggedInUser/Library/Application\ Support/Epic/ ]
 	then 
