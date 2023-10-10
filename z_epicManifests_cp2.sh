@@ -4,12 +4,12 @@ epicLibrary="/Users/$loggedInUser/Library/Application\ Support/Epic/"
 localAdmin=
 
 #if [ -d /Users/$loggedInUser/Library/Application\ Support/Epic/ ]
-if [ -d $epicLibrary ]
+if [[ ! -d ${epicLibrary} ]]
 	then 
 		echo "Epic directory already exists."
 	else
 		#until [ -d /Users/$loggedInUser/Library/Application\ Support/Epic/ ]
-		until [ -d $epicLibrary ]
+		until [[ ! -d ${epicLibrary} ]]
     		do
            		echo "Epic directory not found. Waiting..."
         		sleep 3
