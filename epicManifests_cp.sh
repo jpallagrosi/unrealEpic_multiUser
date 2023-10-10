@@ -3,7 +3,7 @@
 #It will wait until the logged in user opens Epic to move the manifests files and prompt them to relaunch it
 
 loggedInUser=$(ls -l /dev/console | awk '{print$3}')
-localAdmin=$4
+localAdmin=
 
 if [ -d /Users/$loggedInUser/Library/Application\ Support/Epic/ ]
 	then 
