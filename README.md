@@ -14,7 +14,8 @@ Agrements an hide the app script above. "Once per user per computer" \
 If XCode is beeing used separatly to Unreal this might not work for you.
 
 **Deployment:** \
-Add the post script "unrealEpic_multiUser.sh" in the same policy as the package. **Set the local admin in Parameter 4.** \
+Add the post script "unrealEpic_multiUser.sh" in the same policy as the package. \
+**Set the local admin in Parameter 4.** \
 This will install both the LaunchAgent _com.epic.manifests.plist_ and the script _epicManifests_cp.sh_ in the correct locations.
 
 **What does _epicManifests_cp.sh_ do?** \
