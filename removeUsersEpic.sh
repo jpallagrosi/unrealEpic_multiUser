@@ -3,7 +3,7 @@
 # Remove the Epic directory in all users Libraries.
 # This in case Epic is already installed and has been opened by users.
 
-for userName in `ls /Users | grep -v *LOCAL ADMIN* | grep -v Shared`
+for userName in `ls /Users | grep -v LOCAL_ADMIN | grep -v Shared`
 do
     if [ -d /Users/$userName/Library/Application\ Support/Epic/ ]
         then 
