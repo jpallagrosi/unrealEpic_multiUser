@@ -35,7 +35,7 @@ However use _removeUsersEpic.sh_ to remove the Users epic Library. \
 **Set the local admin in Parameter 4.** \
 If the Epic folder is already there _epicManifests_cp.sh_ will exit without moving the Manifests files and the apps won't sink. \
 
-I am aware it is not ideal to have a script waiting in the background as Epic might not be laucnhed but this is the best I could find. \
+I am aware it is not ideal to have a script waiting in the background as Epic might not be laucnhed by users but this is the best I could do. \
 It works for us but might not for other organisations hence why I make this public to have it tested.
 
 I am open to suggestions to improve the above 🙂 \
