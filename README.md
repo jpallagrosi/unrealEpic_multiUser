@@ -24,7 +24,7 @@ When a new user Launches the app it will create an Epic directory in the users l
 If the Manifests files are not there, Epic wont see UE even if it is installed.
 Packaging and deploying "per user per computer" the above componenets will crash Epic. \
 _epicManifests_cp.sh_ will then wait until the logged in user opens Epic and generates the components to then copy the Manifests files from the local admin and place it in the logged in user Library. \
-AppleScript will prompt the users to relaunch Epic as Often the apps donc sink the first time.
+AppleScript will prompt the users to relaunch Epic as Often the apps donc sink the first time. \
 If the logged in user has already used Epic the script will exit.
 
 **LaunchAgent _com.epic.manifests.plist_**
