@@ -32,7 +32,8 @@ This will trigger the script. You don't want to run the script from jamf otherwi
 
 NOTE The script _unrealEpic_multiUser.sh_ works if UE is already installed. \
 However use _removeUsersEpic.sh_ to remove the Users epic Library. \
-If the Epic folder is already there _epicManifests_cp.sh_ will exit without moving the Manifest files.
+**Set the local admin in Parameter 4.** \
+If the Epic folder is already there _epicManifests_cp.sh_ will exit without moving the Manifest files and the apps wont sink. \
 
 I am aware it is not ideal to have a script waiting in the background as Epic might not be laucnhed but this is the best I could find. \
 It works for us but might not for other organisations hence why I make this public to have it tested.
