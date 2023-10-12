@@ -27,7 +27,7 @@ _epicManifests_cp.sh_ will wait until the logged in user opens Epic and generate
 AppleScript will prompt the users to relaunch Epic as often the apps don't sink the first time. \
 If the logged in user has already used Epic the script will exit.
 
-**LaunchAgent _com.epic.manifests.plist_**
+**LaunchAgent _com.epic.manifests.plist_** \
 This will trigger the script. You don't want to run the script from from Jamf otherwise it will hang until Epic is being opened.
 
 NOTE The script _unrealEpic_multiUser.sh_ works if UE is already installed. \
