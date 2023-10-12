@@ -39,5 +39,5 @@ I am aware it is not ideal to have a script waiting in the background as Epic mi
 It works for us but might not for other organisations hence why I make this public to have it tested.
 
 I am open to suggestions to improve the above 🙂 \
-I've logged a few issues if anyone is happy to troubleshoot. \
+I've logged a few issues and feel free to do so or/and solve them! \
 This is Work In Progress...
