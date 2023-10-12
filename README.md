@@ -2,8 +2,8 @@
 
 3 Components needed: Epic Games Launcher, Unreal Engine 5, XCode.
 
-**Epic Games Launcher and Unreal Engine 5:** \
-From the local admin, snapshot the install of both Epic Games Launcher (including updates) and Unreal Engine 5. Package should be around 20GB. \
+**Epic Games Launcher and Unreal Engine:** \
+From the local admin, snapshot the install of both Epic Games Launcher (including updates) and Unreal Engine. Package should be around 20GB. \
 Install Unreal Engine 5 from the Epic Games Launcher. \
 (Drag and drop didn't work for me) \
 NOTE An Epic Games account is required for the above. It is free to sign up.
@@ -41,3 +41,5 @@ It works for us but might not for other organisations hence why I make this publ
 I am open to suggestions to improve the above 🙂 \
 I've logged a few issues and feel free to do so or/and solve them! \
 This is Work In Progress...
+
+TESTED on ARM/Intel OS13 across 2 Macs / Unreal Engine 5.3.1 / Epic Games Launcher 15.15.0
