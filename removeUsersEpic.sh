@@ -2,6 +2,7 @@
 
 # Remove the Epic directory in all users Libraries.
 # This in case Epic is already installed and has been opened by users.
+# Local Admin in Parameter 4
 
 for userName in `ls /Users | grep -v "$4" | grep -v Shared`
 do
