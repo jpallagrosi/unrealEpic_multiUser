@@ -33,7 +33,7 @@ This will trigger the script. You don't want to run _epicManifests_cp.sh_ from J
 NOTE The script _unrealEpic_multiUser.sh_ works if UE is already installed. \
 However use _removeUsersEpic.sh_ to remove the Users epic Library. Including the Users Epic Games preferences \
 **Set the local admin in Parameter 4.** \
-If the Epic folder is already there _epicManifests_cp.sh_ will exit without moving the Manifests files and the apps won't sync. \
+If the Epic folder is already there _epicManifests_cp.sh_ will exit without moving the Manifests files and the apps won't sync.
 
 I am aware it is not ideal to have a script waiting in the background as Epic might not be launched by the users but this is the best I could do. \
 It works for us but might not for other organisations hence why I make this public to have it tested.
@@ -42,5 +42,5 @@ I am open to suggestions to improve the above 🙂 \
 I've logged a few issues and feel free to do so or/and solve them! \
 This is Work In Progress...
 
-TESTED on ARM/Intel OS13 across 3 Macs Laptop&Desktop deploying versions as follows: / Unreal Engine 5.3.1 / Epic Games Launcher 15.15.0
+TESTED on ARM/Intel, OS13, Laptop&Desktop, versions as follows: / Unreal Engine 5.3.1 / Epic Games Launcher 15.15.0
 Also tested the _removeUsersEpic.sh_ _unrealEpic_multiUser.sh_ workfow in a Mac lab.
