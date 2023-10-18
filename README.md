@@ -9,15 +9,14 @@ Package should be around 20GB. \
 Install Unreal Engine 5 from the Epic Games Launcher. \
 NOTE An Epic Games account is required for the above. It is free to sign up.
 
-**XCode:** \
-I use the App Store to install it. \
-Agrements an hide the app script _xCode_agreements_hidetheapp.sh_ "Once per user per computer" \
-If XCode is beeing used separatly to Unreal this might not work for you.
-
 **Deployment:** \
 Add the post script _unrealEpic_multiUser.sh_ in the same policy as the package. \
 **Set the local admin in Parameter 4.** \
 This will install both the LaunchAgent _com.epic.manifests.plist_ and the script _epicManifests_cp.sh_ in the correct locations.
+**XCode:** \
+I use the App Store to install it. \
+Agrements an hide the app script _xCode_agreements_hidetheapp.sh_ "Once per user per computer" \
+If XCode is beeing used separatly to Unreal this might not work for you.
 
 **What does _epicManifests_cp.sh_ do?** \
 I think the Manifests files are the link between UE and Epic. They are generated during the UE installation and unique per install. \
