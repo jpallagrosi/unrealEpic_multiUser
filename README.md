@@ -23,7 +23,7 @@ I think the Manifests files are the link between UE and Epic. They are generated
 When a new user Launches the app it will create an Epic directory in the users library with multiple components in it. \
 If the Manifests files are not there, Epic wont see UE even if it is installed.
 Packaging and deploying "per user per computer" the above components will crash Epic. \
-_epicManifests_cp.sh_ will wait until the logged in user launches Epic and generates the components to then copy the Manifests files from the local admin and place it in the logged in user Library. \
+_epicManifests_cp.sh_ will wait until the logged in user launches Epic, generates the components and then copy the Manifests files from the local admin and place it in the logged in user Library. \
 AppleScript will prompt the users to relaunch Epic as often the apps don't sync the first time. \
 If the logged in user has already used Epic the script will exit.
 
