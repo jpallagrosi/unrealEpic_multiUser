@@ -12,7 +12,7 @@ NOTE An Epic Games account is required for the above. It is free to sign up.
 **Deployment:** \
 Add the post script _unrealEpic_multiUser.sh_ in the same policy as the package. \
 **Set the local admin in Parameter 4.** \
-This will install both the LaunchAgent _com.epic.manifests.plist_ and the script _epicManifests_cp.sh_ in the correct locations.
+This will install both the LaunchAgent _com.epic.manifests.plist_ and the script _epicManifests_cp.sh_ in the correct locations. \
 **XCode:** \
 I use the App Store to install it. \
 Agrements an hide the app script _xCode_agreements_hidetheapp.sh_ "Once per user per computer" \
