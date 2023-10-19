@@ -29,7 +29,7 @@ If the logged in user has already used Epic the script will exit.
 
 **LaunchAgent _com.epic.manifests.plist_** \
 This will trigger the script. You don't want to run _epicManifests_cp.sh_ from Jamf otherwise Jamf will hang until Epic is being opened.
-_unrealEpic_multiUser.sh_ must be deployed on OOH other the LaunchAgent won't load and therefor _epicManifests_cp.sh_ won't move the files.
+_unrealEpic_multiUser.sh_ must be deployed on OOH otherwise the LaunchAgent won't load and therefore _epicManifests_cp.sh_ won't move the files.
 
 NOTE The script _unrealEpic_multiUser.sh_ works if UE is already installed. \
 However use _removeUsersEpic.sh_ to remove the Users epic Library. It will also remove some of the Users Epic Games preferences \
