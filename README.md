@@ -39,7 +39,7 @@ I am aware it is not ideal to have a script waiting in the background as Epic mi
 It works for us but might not for other organisations hence why I am making this public to have it tested and improved.
 
 Feel free to log an issue if you have any suggestions to improve the above. \
-I have logged a few already and this is still Work In Progress 🙂
+I have logged a few already, this is still Work In Progress 🙂
 
 TESTED on ARM/Intel, OS13, Laptop&Desktop, versions as follows: / Unreal Engine 5.3.1 / Epic Games Launcher 15.15.0
 Also tested the _removeUsersEpic.sh_ _unrealEpic_multiUser.sh_ workfow in a Mac lab.
