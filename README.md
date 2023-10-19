@@ -6,7 +6,7 @@
 From the local admin, snapshot the install of both Epic Games Launcher (including updates) and Unreal Engine. \
 (Drag and drop didn't work for me) \
 Package should be around 20GB. \
-Install Unreal Engine 5 from the Epic Games Launcher. \
+Install Unreal Engine from the Epic Games Launcher. \
 NOTE An Epic Games account is required for the above. It is free to sign up.
 
 **Deployment:** \
