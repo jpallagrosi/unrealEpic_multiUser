@@ -1,6 +1,6 @@
 # Unreal Engine
 
-3 Components needed: Epic Games Launcher, Unreal Engine 5, XCode.
+3 Components needed: Epic Games Launcher - Unreal Engine 5 - XCode.
 
 **Epic Games Launcher and Unreal Engine:** \
 From the local admin, snapshot the install of both Epic Games Launcher (including updates) and Unreal Engine. \
