@@ -20,11 +20,11 @@ If XCode is beeing used separatly to Unreal this might not work for you.
 
 **What does _epicManifests_cp.sh_ do?** \
 I think the Manifests files are the link between UE and Epic. They are generated during the UE installation and unique per install. \
-When a new user Launches the app it will create an Epic directory in the users library with multiple components in it. \
+When a new user launches Epic Games it will create an Epic directory in the users library with multiple components in it. \
 If the Manifests files are not there, Epic wont see UE even if it is installed.
 Packaging and deploying "per user per computer" the above components will crash Epic. \
-_epicManifests_cp.sh_ will wait until the logged in user launches Epic, generates the components and then copy the Manifests files from the local admin and place it in the logged in user Library. \
-AppleScript will prompt the users to relaunch Epic as often the apps don't sync the first time. \
+_epicManifests_cp.sh_ will wait until the logged in user launches Epic, generates the components and then copy the Manifests files from the local admin and place it in the logged in user's Library. \
+AppleScript will prompt the logged in user to relaunch Epic as often the apps don't sync the first time. \
 If the logged in user has already used Epic the script will exit.
 
 **LaunchAgent _com.epic.manifests.plist_** \
@@ -36,7 +36,7 @@ However use _removeUsersEpic.sh_ to remove the Users epic Library. It will also 
 If the Epic folder is already there _epicManifests_cp.sh_ will exit without moving the Manifests files and the apps won't sync.
 
 I am aware it is not ideal to have a script waiting in the background as Epic might not be launched by the users but this is the best I could do. \
-It works for us but might not for other organisations hence why I make this public to have it tested.
+It works for us but might not for other organisations hence why I am making this public to have it tested.
 
 I am open to suggestions to improve the above 🙂 \
 I've logged a few issues and feel free to do so or/and solve them! \
