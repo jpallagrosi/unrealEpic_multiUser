@@ -5,7 +5,8 @@
 
 #The script will wait until the logged in user opens Epic to move the manifests files
 #User will be prompt to relaunch the app
-#Local admin in Parameter 4
+#In Jamf, set the local admin in Parameter 4
+
 cd /usr/local/
 
 echo '#!/bin/zsh
