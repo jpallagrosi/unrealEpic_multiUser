@@ -16,7 +16,7 @@ This will install both the LaunchAgent _com.epic.manifests.plist_ and the script
 **XCode:** \
 I use the App Store to install it. \
 Agrements an hide the app script _xCode_agreements_hidetheapp.sh_ "Once per user per computer" \
-If XCode is beeing used separatly to Unreal this might not work for you.
+NOTE If XCode is beeing used separatly to Unreal this might not work for you.
 
 **What does _epicManifests_cp.sh_ do?** \
 I think the Manifests files are the link between UE and Epic. They are generated during the UE installation and unique per install. \
