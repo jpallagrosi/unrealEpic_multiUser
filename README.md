@@ -2,7 +2,7 @@
 
 3 Components needed: Epic Games Launcher - Unreal Engine 5 - XCode.
 
-**Epic Games Launcher and Unreal Engine:** \
+**Packaging Epic Games Launcher and Unreal Engine:** \
 From the local admin, snapshot the install of both Epic Games Launcher (including updates) and Unreal Engine. \
 (Drag and drop didn't work for me) \
 Package should be around 20GB. \
