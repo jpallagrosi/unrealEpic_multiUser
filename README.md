@@ -36,11 +36,11 @@ However use _removeUsersEpic.sh_ to remove the Users epic Library. It will also 
 If the Epic folder is already there _epicManifests_cp.sh_ will exit without moving the Manifests files and the apps won't sync.
 
 I am aware it is not ideal to have a script waiting in the background as Epic might not be launched by the users but this is the best I could do. \
-It works for us but might not for other organisations hence why I am making this public to have it tested.
+It works for us but might not for other organisations hence why I am making this public to have it tested and improved.
 
-I am open to suggestions to improve the above 🙂 \
-I've logged a few issues and feel free to do so or/and solve them! \
-This is Work In Progress...
+Feel free to log an issue if you have any suggestions to improve the above. \
+I have logged a few already. \
+This is Work In Progress 🙂
 
 TESTED on ARM/Intel, OS13, Laptop&Desktop, versions as follows: / Unreal Engine 5.3.1 / Epic Games Launcher 15.15.0
 Also tested the _removeUsersEpic.sh_ _unrealEpic_multiUser.sh_ workfow in a Mac lab.
