@@ -2,6 +2,15 @@
 
 #It will wait until the logged in user opens Epic to move the manifests files and prompt them to relaunch it
 
+# Function to handle logout
+on_logout() {
+    echo "User logged out. Exiting script."
+    exit 0
+}
+
+# Trap the SIGHUP signal (user logout)
+trap on_logout SIGHUP
+
 loggedInUser=$(ls -l /dev/console | awk '{print$3}')
 localAdmin=
 
