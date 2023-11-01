@@ -10,6 +10,16 @@
 cd /usr/local/
 
 echo '#!/bin/zsh
+
+# Function to handle logout
+on_logout() {
+    echo "User logged out. Exiting script."
+    exit 0
+}
+
+# Trap the SIGHUP signal (user logout)
+trap on_logout SIGHUP
+
 loggedInUser=$(ls -l /dev/console | awk '\''{print$3}'\'')
 localAdmin='"$4"'
 
