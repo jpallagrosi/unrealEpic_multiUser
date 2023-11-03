@@ -28,7 +28,7 @@ if [ -d /Users/$loggedInUser/Library/Application\ Support/Epic/ ]
         sleep 3
 
         mkdir -p "/Users/$loggedInUser/Library/Application Support/Epic/EpicGamesLauncher/Data"
-        cp -R "/Users/$localAdmin/Library/Application Support/Epic/EpicGamesLauncher/Data/Manifests" "/Users/$loggedInUser/Library/Application Support/Epic/EpicGamesLauncher/Data/"
+        cp -R "/Users/Shared/.Manifests" "/Users/$loggedInUser/Library/Application Support/Epic/EpicGamesLauncher/Data/Manifests"
 
 		sleep 7
 		osascript  -e 'display dialog "Please restart the Epic Games Launcher to enable full functionality." buttons {"Restart EPIC"} default button 1'
