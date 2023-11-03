@@ -36,7 +36,7 @@ _unrealEpic_multiUser.sh_ must be deployed on OOH otherwise the LaunchAgent won'
 NOTE The script _unrealEpic_multiUser.sh_ works if UE is already installed. \
 However use _removeUsersEpic.sh_ to remove the Users epic Library. It will also remove some of the Users Epic Games preferences \
 **Set the local admin in Parameter 4.** \
-If the Epic folder is not been removed _epicManifests_cp.sh_ will exit without moving the Manifests files and the apps won't sync.
+If the Epic folder has not been removed _epicManifests_cp.sh_ will exit without moving the Manifests files and the apps won't sync.
 
 I am aware it is not ideal to have a script waiting in the background as Epic might not be launched by the users but this is the best I could do. \
 It works for us but might not for other organisations hence why I am making this public to have it tested and improved.
