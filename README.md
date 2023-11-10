@@ -8,7 +8,7 @@ From the local admin, snapshot the install of both Epic Games Launcher (includin
 Package should be around 20GB. \
 Install Unreal Engine from the Epic Games Launcher. \
 NOTES: \
-- An Epic Games account is required for the above. It is free to sign up. \
+- An Epic Games account is required for the above. It is free to sign up.
 - Epic Games Launcher must be up to date to avoid changes popups.
 
 **Deployment:** \
