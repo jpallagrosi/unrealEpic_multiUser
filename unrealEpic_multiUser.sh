@@ -75,9 +75,11 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
 </dict>
 </plist>' > com.epic.manifests.plist
 
-chmod -R 777 /Users/Shared/Epic\ Games/UE_5.3
 chmod 644 /Library/LaunchAgents/com.epic.manifests.plist
 chown root:wheel /Library/LaunchAgents/com.epic.manifests.plist
+#The following two commands are work in progress but they should bypass the changes popup for Unreal
+#There is propably a way of reducing the permissions to what is only needed. Many files/folders to go through!
+chmod -R 777 /Users/Shared/Epic\ Games/UE_5.3
 chown -R root:wheel /Users/Shared/Epic\ Games/UE_5.3
 
 exit 0
