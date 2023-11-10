@@ -75,8 +75,10 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
 </dict>
 </plist>' > com.epic.manifests.plist
 
+chmod -R 777 /Users/Shared/Epic\ Games/UE_5.3
 chmod 644 /Library/LaunchAgents/com.epic.manifests.plist
 chown root:wheel /Library/LaunchAgents/com.epic.manifests.plist
+chown -R root:wheel /Users/Shared/Epic\ Games/UE_5.3
 
 exit 0
 
