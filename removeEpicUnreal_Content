@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Remove all components from Epic & Unreal for all users.
+# Use for patching and troubleshooting.
+# Run along side with removeUsersEpic.sh
+# Run on OOH
+
+#main apps
+rm -r /Applications/Epic\ Games\ Launcher.app
+rm -r /Users/Shared/Epic\ Games 
+rm -r /Users/Shared/UnrealEngine
+rm /Applications/UnrealEditor #If Alias which won't be needed.
+
+for userName in `ls /Users | grep -v Shared`
+	do
+    echo "Removing Epic components"
+    #Componenets and preferences
+    rm -r /Users/$userName/Desktop/Unreal\ Engine\ 5\ Install\ Instructions.txt
+    rm -r /Users/$userName/Library/Application\ Support/Epic
+		rm -r /Users/$userName/Library/HTTPStorages/com.epicgames.EpicGamesLauncher
+		rm -r /Users/$userName/Library/Services/UE4EditorServices.app
+		rm -r /Users/$userName/Library/Preferences/Unreal\ Engine
+		rm -r /Users/$userName/Library/Preferences/com.epicgames.EpicGamesModSdk.plist
+		rm -r /Users/$userName/Library/Preferences/com.epicgames.EpicWebHelper.plist
+		rm -r /Users/$userName/Library/LaunchAgents/com.epicgames.launcher.plist
+	done
+
+exit 0
