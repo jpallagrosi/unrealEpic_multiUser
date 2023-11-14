@@ -42,6 +42,9 @@ If the Epic folder has not been removed _epicManifests_cp.sh_ will exit without 
 **Patching Epic Games Launcher:** \
 Install Epic. Open and login to trigger teh update at first launch. \
 Drag and drop in Composer and deploy over the top.
+**Patching Epic and Unreal Engine:** \
+Do the same as the original install but add the removal pre script _removeEpicUnreal_Content_ to the chain. \
+Before anything else - This will remove users preferences (Might be able tocomment out a few lines to avoid that. To be tested)
 
 I am aware it is not ideal to have a script waiting in the background as Epic might not be launched by the users but this is the best I could do. \
 It works for us but might not for other organisations hence why I am making this public to have it tested and improved.
