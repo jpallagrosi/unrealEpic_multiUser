@@ -30,7 +30,6 @@ _epicManifests_cp.sh_ will wait until the logged in user launches Epic, generate
 AppleScript will prompt the logged in user to relaunch Epic as often the apps don't sync the first time. \
 _epicManifests_cp.sh_ will exit in 2 cases: 1. When the user log out 2. If the user already launched Epic.
 
-
 **LaunchAgent _com.epic.manifests.plist_** \
 This will trigger the script. You don't want to run _epicManifests_cp.sh_ from Jamf otherwise Jamf will hang until Epic is being opened.
 _unrealEpic_multiUser.sh_ must be deployed on OOH otherwise the LaunchAgent won't load and therefore _epicManifests_cp.sh_ won't move the files.
@@ -39,6 +38,10 @@ NOTE The script _unrealEpic_multiUser.sh_ works if UE is already installed. \
 However use _removeUsersEpic.sh_ to remove the Users epic Library. It will also remove some of the Users Epic Games preferences \
 **Set the local admin in Parameter 4.** \
 If the Epic folder has not been removed _epicManifests_cp.sh_ will exit without moving the Manifests files and the apps won't sync.
+
+**Patching Epic Games Launcher:** \
+Install Epic. Open and login to trigger teh update at first launch. \
+Drag and drop in Composer and deploy over the top.
 
 I am aware it is not ideal to have a script waiting in the background as Epic might not be launched by the users but this is the best I could do. \
 It works for us but might not for other organisations hence why I am making this public to have it tested and improved.
