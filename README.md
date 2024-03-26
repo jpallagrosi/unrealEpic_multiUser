@@ -1,5 +1,7 @@
 # Unreal Engine
 
+NOTE I AM CURRENTLY WORKING ON AN IMPROVED VERSION OF THE SCRIPT. \
+
 3 Components needed: Epic Games Launcher - Unreal Engine 5 - XCode.
 
 **Packaging Epic Games Launcher and Unreal Engine:** \
