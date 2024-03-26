@@ -1,6 +1,6 @@
 # Unreal Engine
 
-NOTE I AM CURRENTLY WORKING ON AN IMPROVED VERSION OF THE SCRIPT. \
+NOTE I AM CURRENTLY WORKING ON AN IMPROVED VERSION OF THE SCRIPT.
 
 3 Components needed: Epic Games Launcher - Unreal Engine 5 - XCode.
 
