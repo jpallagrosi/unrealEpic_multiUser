@@ -1,6 +1,7 @@
 # Unreal Engine
 
-NOTE I AM CURRENTLY WORKING ON AN IMPROVED VERSION OF THE SCRIPT.
+NOTE THIS WORKFLOW IS NO MORE NEEDED FROM VERSION 5.5.1 \
+See the new workflow [HERE](https://github.com/jpallagrosi/jamfTips/tree/WIP/Installers/UnrealEngine5)
 
 3 Components needed: Epic Games Launcher - Unreal Engine 5 - XCode.
 
