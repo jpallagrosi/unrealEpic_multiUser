@@ -9,7 +9,7 @@
 rm -r /Applications/Epic\ Games\ Launcher.app
 rm -r /Users/Shared/Epic\ Games 
 rm -r /Users/Shared/UnrealEngine
-rm /Applications/UnrealEditor #If Alias which won't be needed.
+rm /Applications/UnrealEditor.app #If Alias which won't be needed.
 
 for userName in `ls /Users | grep -v Shared`
 	do
